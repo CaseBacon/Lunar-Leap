@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ea3esx0vipv"]
+
+[ext_resource type="Texture2D" uid="uid://c3on2hle6g6hv" path="res://assets/Cloud Pack/Cloud 1.png" id="1_pbbun"]
+[ext_resource type="Script" uid="uid://dbg7wj3ima04d" path="res://cloud_slow.gd" id="2_athrd"]
+
+[node name="Node2D" type="Node2D" unique_id=1713889512]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2078686366]
+texture = ExtResource("1_pbbun")
+script = ExtResource("2_athrd")
