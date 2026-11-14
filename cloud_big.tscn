@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bfwc5nlgbooye"]
+
+[ext_resource type="Texture2D" uid="uid://dq8fesxc4lqid" path="res://assets/Cloud Pack/Cloud 12.png" id="1_jewuu"]
+[ext_resource type="Script" uid="uid://mfsi858vymil" path="res://cloud.gd" id="2_qi266"]
+
+[node name="Node2D" type="Node2D" unique_id=959141039]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1090449229]
+texture = ExtResource("1_jewuu")
+script = ExtResource("2_qi266")
