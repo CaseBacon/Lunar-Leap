@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://bhduorjvsolii" path="res://New free backgrounds part3/background 1/2.png" id="14_xpe5y"]
 [ext_resource type="Texture2D" uid="uid://bq6krtss4iuwx" path="res://ocean-and-clouds-free-pixel-art-backgrounds/Ocean_4/4.png" id="15_0kctw"]
 [ext_resource type="Texture2D" uid="uid://ccep5yg42hx8t" path="res://ocean-and-clouds-free-pixel-art-backgrounds/Ocean_1/Cloud-5.webp" id="16_2mb5o"]
+[ext_resource type="Texture2D" uid="uid://cg1acuyk7uj8t" path="res://New free backgrounds part3/background 3/5.png" id="16_kg70m"]
 [ext_resource type="Texture2D" uid="uid://cp2iqu7oorr1t" path="res://New free backgrounds part5/background 3/3.png" id="17_0c73o"]
 [ext_resource type="Texture2D" uid="uid://so0slio7ir37" path="res://pixel-art-illustration-space-satellite-pixelated-satellite-space-satellite-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-vector__1_-removebg-preview.png" id="18_kg70m"]
 [ext_resource type="Texture2D" uid="uid://bu44x0wkgcbmg" path="res://New free backgrounds part5/background 3/4.png" id="18_lhde3"]
@@ -734,11 +735,20 @@ texture = ExtResource("15_0kctw")
 
 [node name="TextureRect18" type="TextureRect" parent="." unique_id=2087660622]
 layout_mode = 0
-offset_left = 756.0
-offset_top = 2251.0
-offset_right = 1093.0
-offset_bottom = 2438.0
+offset_left = 740.0
+offset_top = 2202.0
+offset_right = 1077.0
+offset_bottom = 2389.0
 texture = ExtResource("16_2mb5o")
+
+[node name="TextureRect25" type="TextureRect" parent="." unique_id=1740111072]
+layout_mode = 0
+offset_left = -57.0
+offset_top = 2272.0
+offset_right = 519.0
+offset_bottom = 2596.0
+texture = ExtResource("16_kg70m")
+flip_h = true
 
 [node name="TextureRect20" type="TextureRect" parent="." unique_id=1921768456]
 layout_mode = 0
@@ -756,6 +766,14 @@ offset_right = 1094.0
 offset_bottom = 3705.0
 texture = ExtResource("18_lhde3")
 
+[node name="TextureRect18" type="TextureRect" parent="TextureRect19" unique_id=248592236]
+layout_mode = 0
+offset_left = 756.0
+offset_top = 2251.0
+offset_right = 1093.0
+offset_bottom = 2438.0
+texture = ExtResource("16_2mb5o")
+
 [node name="TextureRect22" type="TextureRect" parent="." unique_id=501454907]
 layout_mode = 0
 offset_right = 40.0
@@ -765,20 +783,20 @@ offset_bottom = 40.0
 modulate = Color(0.5568628, 0.7019608, 1, 1)
 self_modulate = Color(1, 1, 1, 0.8117647)
 layout_mode = 0
-offset_left = 685.0
-offset_top = 1063.0
-offset_right = 1080.0
-offset_bottom = 1464.0
+offset_left = 637.0
+offset_top = 1119.0
+offset_right = 1032.0
+offset_bottom = 1520.0
 texture = ExtResource("18_kg70m")
 expand_mode = 1
 
 [node name="TextureRect24" type="TextureRect" parent="." unique_id=1987117150]
 self_modulate = Color(0.6904162, 0.79342693, 1, 1)
 layout_mode = 0
-offset_left = -44.0
-offset_top = 884.0
-offset_right = 349.62085
-offset_bottom = 1292.3643
+offset_left = -47.99997
+offset_top = 828.0
+offset_right = 345.62088
+offset_bottom = 1236.3643
 rotation = -0.424115
 texture = ExtResource("19_r30bm")
 flip_h = true
