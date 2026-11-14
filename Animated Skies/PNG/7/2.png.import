@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<<< Updated upstream:Animated Skies/PNG/7/2.png.import
 uid="uid://b05eyhmwvicih"
 path="res://.godot/imported/2.png-ae8f9cabf9a5d4efbc194ca875f3de2a.ctex"
-========
-uid="uid://dgkc64rlhix23"
-path="res://.godot/imported/1.png-c9a8e694d0d275633d567702fb508122.ctex"
->>>>>>>> Stashed changes:assets/1.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< Updated upstream:Animated Skies/PNG/7/2.png.import
 source_file="res://Animated Skies/PNG/7/2.png"
 dest_files=["res://.godot/imported/2.png-ae8f9cabf9a5d4efbc194ca875f3de2a.ctex"]
-========
-source_file="res://assets/1.png"
-dest_files=["res://.godot/imported/1.png-c9a8e694d0d275633d567702fb508122.ctex"]
->>>>>>>> Stashed changes:assets/1.png.import
 
 [params]
 

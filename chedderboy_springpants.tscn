@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cf1dww16ovhd8" path="res://chedderboy_springpants.gd" id="1_esiui"]
 [ext_resource type="Texture2D" uid="uid://dsiiouchv6xwc" path="res://icon.svg" id="1_s863d"]
 [ext_resource type="Script" uid="uid://c0d0lw5xge8co" path="res://xp_bar.gd" id="3_e5d1y"]
+[ext_resource type="Script" uid="uid://ddr4kskln220c" path="res://springcheck.gd" id="3_pvip5"]
 [ext_resource type="Script" uid="uid://d16qvdy4addvp" path="res://control.gd" id="4_iamsl"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_esiui"]
@@ -11,6 +12,9 @@ height = 99.600006
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_giyli"]
 size = Vector2(130, 120)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bde3n"]
+size = Vector2(134.54546, 132)
 
 [sub_resource type="Gradient" id="Gradient_esiui"]
 offsets = PackedFloat32Array(0)
@@ -89,6 +93,15 @@ shape = SubResource("CapsuleShape2D_esiui")
 position = Vector2(0, 0.19999695)
 scale = Vector2(0.55, 0.25)
 shape = SubResource("RectangleShape2D_giyli")
+
+[node name="springcheck" type="Area2D" parent="." unique_id=129409570]
+position = Vector2(0, 0.19999695)
+scale = Vector2(0.55, 0.25)
+script = ExtResource("3_pvip5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="springcheck" unique_id=906924126]
+position = Vector2(3.4679065e-06, 1.2000122)
+shape = SubResource("RectangleShape2D_bde3n")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1501359226]
 position_smoothing_enabled = true
