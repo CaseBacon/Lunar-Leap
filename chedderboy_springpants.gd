@@ -17,12 +17,13 @@ var rotting = false
 var lr = 1
 var xvp = 0
 var allowx = false
-var friction = 800
+var friction = 1600
 var can = true
 var jh = 0
 var jumps = 1
 var jump_limit = 1
 var cs = 0.01
+
 func _ready() -> void:
 	var scale_spring = spring.scale.y
 	var og_ss = scale_spring
