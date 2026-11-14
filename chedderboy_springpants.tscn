@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://c30840v23pwl8"]
+
+[ext_resource type="Script" uid="uid://cf1dww16ovhd8" path="res://chedderboy_springpants.gd" id="1_esiui"]
+[ext_resource type="Texture2D" uid="uid://dsiiouchv6xwc" path="res://icon.svg" id="1_s863d"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_esiui"]
+radius = 31.0
+height = 99.600006
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_giyli"]
+size = Vector2(130, 120)
+
+[node name="Chedderboy Springpants" type="CharacterBody2D" unique_id=1690689945]
+script = ExtResource("1_esiui")
+
+[node name="player" type="Sprite2D" parent="." unique_id=1232417907]
+position = Vector2(0, -65.8)
+scale = Vector2(0.5, 0.8)
+texture = ExtResource("1_s863d")
+
+[node name="spring" type="Sprite2D" parent="." unique_id=186469690]
+position = Vector2(0, -0.80000305)
+scale = Vector2(0.55, 0.25)
+texture = ExtResource("1_s863d")
+
+[node name="Playercol" type="CollisionShape2D" parent="." unique_id=1378865547]
+process_priority = 1
+process_physics_priority = 1
+position = Vector2(0, -65.8)
+shape = SubResource("CapsuleShape2D_esiui")
+
+[node name="Springcol" type="CollisionShape2D" parent="." unique_id=1976129197]
+position = Vector2(0, 0.19999695)
+scale = Vector2(0.55, 0.25)
+shape = SubResource("RectangleShape2D_giyli")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1501359226]
+position_smoothing_enabled = true
