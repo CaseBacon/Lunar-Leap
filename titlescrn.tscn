@@ -1,0 +1,122 @@
+[gd_scene format=3 uid="uid://bswpwdo63nd34"]
+
+[sub_resource type="Gradient" id="Gradient_pw15y"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0.3, 0.7, 0.9)
+colors = PackedColorArray(0, 0, 0.12941177, 1, 0, 0, 0.23137255, 1, 0, 0, 0.35686275, 1)
+metadata/_snap_enabled = true
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_cekx0"]
+gradient = SubResource("Gradient_pw15y")
+
+[sub_resource type="Gradient" id="Gradient_24jmf"]
+offsets = PackedFloat32Array(0.4, 0.8, 1)
+colors = PackedColorArray(0, 0, 0.3764706, 1, 0, 0.05882353, 0.50980395, 1, 0, 0.047058824, 0.4509804, 1)
+metadata/_snap_enabled = true
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_pw15y"]
+gradient = SubResource("Gradient_24jmf")
+
+[sub_resource type="Gradient" id="Gradient_wri4b"]
+offsets = PackedFloat32Array(0.4, 0.7, 1)
+colors = PackedColorArray(0, 0.05882353, 0.4862745, 1, 0, 0.05882353, 0.6039216, 1, 0, 0.34901962, 0.6431373, 1)
+metadata/_snap_enabled = true
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_rf14b"]
+gradient = SubResource("Gradient_wri4b")
+
+[sub_resource type="Gradient" id="Gradient_0h13x"]
+offsets = PackedFloat32Array(0.2, 0.5, 0.7, 0.9)
+colors = PackedColorArray(0, 0.36078432, 0.6431373, 1, 0, 0.39686275, 0.6682353, 1, 0, 0.49411765, 0.76862746, 1, 0, 0.5921569, 0.80784315, 1)
+metadata/_snap_enabled = true
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_kbqmw"]
+gradient = SubResource("Gradient_0h13x")
+
+[sub_resource type="Gradient" id="Gradient_1yiqd"]
+offsets = PackedFloat32Array(0, 0.5, 1)
+colors = PackedColorArray(0, 0.5921569, 0.80784315, 1, 0, 0.6313726, 0.80784315, 1, 0.050980393, 0.6862745, 0.8627451, 1)
+metadata/_snap_enabled = true
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_i41eb"]
+gradient = SubResource("Gradient_1yiqd")
+
+[sub_resource type="Gradient" id="Gradient_myf0v"]
+offsets = PackedFloat32Array(0.1, 0.6, 0.9)
+colors = PackedColorArray(0.039215688, 0.6901961, 0.8509804, 1, 0.050980393, 0.7607843, 0.8627451, 1, 0.050980393, 0.8156863, 0.8627451, 1)
+metadata/_snap_enabled = true
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_xr6st"]
+gradient = SubResource("Gradient_myf0v")
+
+[node name="Control" type="Control" unique_id=311232094]
+layout_mode = 3
+anchor_right = 1.0
+anchor_bottom = 1.0480001
+offset_left = 44.0
+offset_top = -171.0
+offset_right = 45.0
+offset_bottom = -202.10406
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=991767828]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.051000003
+anchor_top = 0.256
+anchor_right = 0.95900005
+anchor_bottom = 1.2570001
+offset_left = 1164.1888
+offset_top = 9.793976
+offset_right = 652.3345
+offset_bottom = 503.43207
+rotation = 1.5759234
+texture = SubResource("GradientTexture2D_cekx0")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=524386393]
+layout_mode = 0
+offset_left = 1103.0
+offset_top = 824.0
+offset_right = 1744.304
+offset_bottom = 1973.3481
+rotation = 1.5752995
+texture = SubResource("GradientTexture2D_pw15y")
+
+[node name="TextureRect4" type="TextureRect" parent="." unique_id=1222542501]
+layout_mode = 0
+offset_left = 1099.0
+offset_top = 1444.0
+offset_right = 1726.1948
+offset_bottom = 2582.3203
+rotation = 1.5707964
+texture = SubResource("GradientTexture2D_rf14b")
+
+[node name="TextureRect3" type="TextureRect" parent="." unique_id=1903658210]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.16700001
+offset_left = 1098.1453
+offset_top = 2071.0
+offset_right = 1539.8373
+offset_bottom = 3208.9617
+rotation = 1.5707964
+texture = SubResource("GradientTexture2D_kbqmw")
+
+[node name="TextureRect5" type="TextureRect" parent="." unique_id=874423373]
+layout_mode = 0
+offset_left = 1097.0
+offset_top = 2699.4841
+offset_right = 1740.0112
+offset_bottom = 3837.7522
+rotation = 1.5707964
+texture = SubResource("GradientTexture2D_i41eb")
+
+[node name="TextureRect6" type="TextureRect" parent="." unique_id=712188874]
+layout_mode = 0
+offset_left = 1096.0
+offset_top = 3342.0
+offset_right = 1747.9849
+offset_bottom = 4482.5566
+rotation = 1.5707964
+texture = SubResource("GradientTexture2D_xr6st")
