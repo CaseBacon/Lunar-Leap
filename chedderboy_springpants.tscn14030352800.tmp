@@ -1,0 +1,216 @@
+[gd_scene format=3 uid="uid://c30840v23pwl8"]
+
+[ext_resource type="Script" uid="uid://cf1dww16ovhd8" path="res://chedderboy_springpants.gd" id="1_esiui"]
+[ext_resource type="Texture2D" uid="uid://dsiiouchv6xwc" path="res://icon.svg" id="1_s863d"]
+[ext_resource type="Script" uid="uid://c0d0lw5xge8co" path="res://xp_bar.gd" id="3_e5d1y"]
+[ext_resource type="Script" uid="uid://d16qvdy4addvp" path="res://control.gd" id="4_iamsl"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_esiui"]
+radius = 31.0
+height = 99.600006
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_giyli"]
+size = Vector2(130, 120)
+
+[sub_resource type="Gradient" id="Gradient_esiui"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 1, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_bde3n"]
+gradient = SubResource("Gradient_esiui")
+
+[sub_resource type="Gradient" id="Gradient_iamsl"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(0.2509804, 0.2509804, 0.2509804, 0.48235294)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_iamsl"]
+gradient = SubResource("Gradient_iamsl")
+
+[sub_resource type="SystemFont" id="SystemFont_4a4qf"]
+font_names = PackedStringArray("Tw Cen MT")
+
+[sub_resource type="LabelSettings" id="LabelSettings_bde3n"]
+font = SubResource("SystemFont_4a4qf")
+font_size = 64
+
+[sub_resource type="Gradient" id="Gradient_pvip5"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.14509805, 0.14509805, 0.14509805, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_igh4p"]
+gradient = SubResource("Gradient_pvip5")
+
+[sub_resource type="LabelSettings" id="LabelSettings_giyli"]
+font_size = 25
+
+[sub_resource type="LabelSettings" id="LabelSettings_iamsl"]
+font_size = 12
+
+[sub_resource type="Gradient" id="Gradient_4or36"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.14767182, 0.14767179, 0.14767179, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_euywh"]
+gradient = SubResource("Gradient_4or36")
+
+[sub_resource type="LabelSettings" id="LabelSettings_pvip5"]
+font_size = 12
+
+[sub_resource type="Gradient" id="Gradient_rlded"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.14509805, 0.14509805, 0.14509805, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_giyli"]
+gradient = SubResource("Gradient_rlded")
+
+[sub_resource type="LabelSettings" id="LabelSettings_4or36"]
+font_size = 12
+
+[node name="Chedderboy Springpants" type="CharacterBody2D" unique_id=1690689945]
+script = ExtResource("1_esiui")
+
+[node name="player" type="Sprite2D" parent="." unique_id=1232417907]
+position = Vector2(0, -65.8)
+scale = Vector2(0.5, 0.8)
+texture = ExtResource("1_s863d")
+
+[node name="spring" type="Sprite2D" parent="." unique_id=186469690]
+position = Vector2(0, -0.80000305)
+scale = Vector2(0.55, 0.25)
+texture = ExtResource("1_s863d")
+
+[node name="Playercol" type="CollisionShape2D" parent="." unique_id=1378865547]
+process_priority = 1
+process_physics_priority = 1
+position = Vector2(0, -65.8)
+shape = SubResource("CapsuleShape2D_esiui")
+
+[node name="Springcol" type="CollisionShape2D" parent="." unique_id=1976129197]
+position = Vector2(0, 0.19999695)
+scale = Vector2(0.55, 0.25)
+shape = SubResource("RectangleShape2D_giyli")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1501359226]
+position_smoothing_enabled = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Camera2D" unique_id=1392316020]
+
+[node name="Xp bar" type="TextureRect" parent="Camera2D/CanvasLayer" unique_id=1078828482]
+offset_left = -3.0
+offset_top = 611.0
+offset_right = 1151.0
+offset_bottom = 624.0
+texture = SubResource("GradientTexture2D_bde3n")
+expand_mode = 1
+script = ExtResource("3_e5d1y")
+
+[node name="Control" type="Control" parent="Camera2D/CanvasLayer" unique_id=237379290]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("4_iamsl")
+
+[node name="TextureRect" type="TextureRect" parent="Camera2D/CanvasLayer/Control" unique_id=1324093795]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 28.803001
+anchor_bottom = 16.211
+offset_left = 2.0
+offset_top = 5.0
+offset_right = 0.8798828
+offset_bottom = -6.4400024
+grow_horizontal = 2
+grow_vertical = 0
+texture = SubResource("GradientTexture2D_iamsl")
+
+[node name="Label" type="Label" parent="Camera2D/CanvasLayer/Control" unique_id=1336990796]
+layout_mode = 0
+offset_right = 1147.0
+offset_bottom = 70.0
+text = "Pick an Upgrade"
+label_settings = SubResource("LabelSettings_bde3n")
+horizontal_alignment = 1
+
+[node name="up1" type="TextureRect" parent="Camera2D/CanvasLayer/Control" unique_id=415865396]
+layout_mode = 0
+offset_left = 191.833
+offset_top = 222.0
+offset_right = 354.833
+offset_bottom = 465.0
+texture = SubResource("GradientTexture2D_igh4p")
+
+[node name="title" type="Label" parent="Camera2D/CanvasLayer/Control/up1" unique_id=1580471841]
+layout_mode = 0
+offset_right = 165.167
+offset_bottom = 45.0
+text = "Placeholder"
+label_settings = SubResource("LabelSettings_giyli")
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="description" type="Label" parent="Camera2D/CanvasLayer/Control/up1" unique_id=1076504565]
+layout_mode = 0
+offset_top = 160.0
+offset_right = 162.167
+offset_bottom = 239.0
+text = "Placeholder"
+label_settings = SubResource("LabelSettings_iamsl")
+autowrap_mode = 3
+justification_flags = 171
+
+[node name="up2" type="TextureRect" parent="Camera2D/CanvasLayer/Control" unique_id=1602280822]
+layout_mode = 0
+offset_left = 843.0
+offset_top = 222.0
+offset_right = 1006.0
+offset_bottom = 465.0
+texture = SubResource("GradientTexture2D_euywh")
+
+[node name="title" type="Label" parent="Camera2D/CanvasLayer/Control/up2" unique_id=1277394440]
+layout_mode = 0
+offset_right = 165.167
+offset_bottom = 45.0
+text = "Placeholder"
+label_settings = SubResource("LabelSettings_giyli")
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="description" type="Label" parent="Camera2D/CanvasLayer/Control/up2" unique_id=1340093726]
+layout_mode = 0
+offset_top = 160.0
+offset_right = 162.167
+offset_bottom = 239.0
+text = "Placeholder"
+label_settings = SubResource("LabelSettings_pvip5")
+autowrap_mode = 3
+
+[node name="up3" type="TextureRect" parent="Camera2D/CanvasLayer/Control" unique_id=207946755]
+layout_mode = 0
+offset_left = 499.0
+offset_top = 222.0
+offset_right = 662.0
+offset_bottom = 465.0
+texture = SubResource("GradientTexture2D_giyli")
+
+[node name="title" type="Label" parent="Camera2D/CanvasLayer/Control/up3" unique_id=1928981153]
+layout_mode = 0
+offset_right = 165.167
+offset_bottom = 45.0
+text = "Placeholder"
+label_settings = SubResource("LabelSettings_giyli")
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="description" type="Label" parent="Camera2D/CanvasLayer/Control/up3" unique_id=1429330598]
+layout_mode = 0
+offset_top = 160.0
+offset_right = 162.167
+offset_bottom = 239.0
+text = "Placeholder"
+label_settings = SubResource("LabelSettings_4or36")
+autowrap_mode = 3
+
+[connection signal="gui_input" from="Camera2D/CanvasLayer/Control/up1" to="Camera2D/CanvasLayer/Control" method="_on_up_1_gui_input"]
+[connection signal="gui_input" from="Camera2D/CanvasLayer/Control/up2" to="Camera2D/CanvasLayer/Control" method="_on_up_2_gui_input"]
+[connection signal="gui_input" from="Camera2D/CanvasLayer/Control/up3" to="Camera2D/CanvasLayer/Control" method="_on_up_3_gui_input"]
