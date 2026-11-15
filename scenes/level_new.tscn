@@ -740,3 +740,5 @@ position = Vector2(579, -3600)
 shape = SubResource("RectangleShape2D_bde3n")
 
 [connection signal="area_entered" from="endcheck" to="Chedderboy Springpants" method="_on_endcheck_area_entered"]
+[connection signal="area_shape_entered" from="endcheck" to="Chedderboy Springpants" method="_on_endcheck_area_shape_entered"]
+[connection signal="body_entered" from="endcheck" to="Chedderboy Springpants" method="_on_endcheck_body_entered"]

@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://b634gdq0lglcj"]
+
+[ext_resource type="Texture2D" uid="uid://c17wkokn0fibo" path="res://assets/aseprite/Sprite-0011.png" id="1_e2dv3"]
+[ext_resource type="Texture2D" uid="uid://cd7kaxce1dmpw" path="res://assets/1.png" id="2_0t84q"]
+[ext_resource type="Texture2D" uid="uid://cp18ttrryceo0" path="res://assets/moon tileset.png" id="3_a2d7o"]
+[ext_resource type="Texture2D" uid="uid://ddnvl0svasiha" path="res://assets/springupscale.webp" id="4_ujx65"]
+[ext_resource type="Script" uid="uid://cvkqpumu3arbw" path="res://endtalk.gd" id="5_3740v"]
+[ext_resource type="Texture2D" uid="uid://dkg81r8h1h80e" path="res://assets/Speechbubble_title_bb.webp" id="6_220av"]
+[ext_resource type="Texture2D" uid="uid://q56qxc5nql2g" path="res://assets/CheddarBoy_SpringPants_body_and_head.png" id="7_udx4x"]
+[ext_resource type="Texture2D" uid="uid://bwbhctctqkrcd" path="res://assets/alien.webp" id="8_3y0yq"]
+[ext_resource type="Texture2D" uid="uid://cr4didtm2nvs6" path="res://assets/Cheese.webp" id="9_vdtgj"]
+
+[sub_resource type="SystemFont" id="SystemFont_giyli"]
+font_names = PackedStringArray("Gill Sans")
+
+[sub_resource type="LabelSettings" id="LabelSettings_jjm3y"]
+font = SubResource("SystemFont_giyli")
+font_size = 12
+font_color = Color(0, 0, 0, 1)
+
+[node name="Node2D" type="Node2D" unique_id=366178257]
+
+[node name="Sprite2D7" type="Sprite2D" parent="." unique_id=2075551600]
+position = Vector2(577, 348.00003)
+scale = Vector2(1, 1.0802469)
+texture = ExtResource("1_e2dv3")
+
+[node name="Sprite2D8" type="Sprite2D" parent="." unique_id=783044065]
+position = Vector2(577, 322.00003)
+scale = Vector2(4.5, 2.5312502)
+texture = ExtResource("2_0t84q")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=682400945]
+position = Vector2(561, 430.75)
+scale = Vector2(5.292079, 5.2049994)
+texture = ExtResource("3_a2d7o")
+region_enabled = true
+region_rect = Rect2(-0.59202576, 0, 101.605316, 100)
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=400038615]
+position = Vector2(396, 333)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("4_ujx65")
+script = ExtResource("5_3740v")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Sprite2D2" unique_id=1933205740]
+position = Vector2(8.7499695, -238.75003)
+scale = Vector2(1.4713541, 1.61458)
+texture = ExtResource("6_220av")
+
+[node name="Label" type="Label" parent="Sprite2D2" unique_id=1239316770]
+offset_left = -88.749985
+offset_top = -303.74997
+offset_right = 137.50002
+offset_bottom = -227.49997
+text = "(Press Space)"
+label_settings = SubResource("LabelSettings_jjm3y")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=646634621]
+position = Vector2(400, 271)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("7_udx4x")
+
+[node name="Sprite2D4" type="Sprite2D" parent="." unique_id=368428667]
+position = Vector2(669, 258)
+scale = Vector2(2, 2)
+texture = ExtResource("8_3y0yq")
+
+[node name="Sprite2D5" type="Sprite2D" parent="." unique_id=1520967751]
+position = Vector2(647, 245)
+scale = Vector2(0.5, 0.375)
+texture = ExtResource("9_vdtgj")

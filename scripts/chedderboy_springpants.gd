@@ -142,4 +142,4 @@ func floor_check(f):
 
 
 func _on_endcheck_area_entered(area: Area2D) -> void:
-	pass
+	get_tree().change_scene_to_file.call_deferred("res://ending.tscn")
