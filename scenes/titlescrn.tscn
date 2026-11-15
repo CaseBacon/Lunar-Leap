@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://ccep5yg42hx8t" path="res://assets/ocean-and-clouds-free-pixel-art-backgrounds/Ocean_1/Cloud-5.webp" id="16_2mb5o"]
 [ext_resource type="Texture2D" uid="uid://cg1acuyk7uj8t" path="res://assets/New free backgrounds part3/background 3/5.png" id="16_kg70m"]
 [ext_resource type="Texture2D" uid="uid://cp2iqu7oorr1t" path="res://assets/New free backgrounds part5/background 3/3.png" id="17_0c73o"]
-[ext_resource type="Texture2D" uid="uid://so0slio7ir37" path="res://assets/pixel-art-illustration-space-satellite-pixelated-satellite-space-satellite-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-vector__1_-removebg-preview.png" id="18_kg70m"]
+[ext_resource type="Texture2D" uid="uid://so0slio7ir37" path="res://assets/s2.png" id="18_kg70m"]
 [ext_resource type="Texture2D" uid="uid://bu44x0wkgcbmg" path="res://assets/New free backgrounds part5/background 3/4.png" id="18_lhde3"]
 [ext_resource type="Texture2D" uid="uid://bmoyacvyfcii8" path="res://assets/aseprite/Sprite-0032.png" id="20_hqf20"]
 [ext_resource type="Texture2D" uid="uid://xu03eqlbj4tj" path="res://assets/title writing asset/lunar big writing.png" id="21_ilmlr"]
@@ -30,6 +30,7 @@
 [ext_resource type="Texture2D" uid="uid://bhhpjams80h83" path="res://assets/buttons/buttons/quit-pressed.png" id="28_djij0"]
 [ext_resource type="Texture2D" uid="uid://qaaa3s5wuk1p" path="res://assets/aseprite/plane.png" id="29_hw3yu"]
 [ext_resource type="Texture2D" uid="uid://b8is5wloeeqk6" path="res://assets/aseprite/bird title.png" id="30_hfvlg"]
+[ext_resource type="PackedScene" uid="uid://cjxj8wd153rtm" path="res://scenes/tree.tscn" id="31_y1j1i"]
 
 [sub_resource type="Gradient" id="Gradient_pw15y"]
 interpolation_mode = 2
@@ -922,3 +923,7 @@ offset_top = 3225.0
 offset_right = 461.798
 offset_bottom = 3288.848
 texture = ExtResource("30_hfvlg")
+
+[node name="RigidBody2D" parent="." unique_id=1263069422 instance=ExtResource("31_y1j1i")]
+position = Vector2(868, 3552)
+scale = Vector2(6, 6)
