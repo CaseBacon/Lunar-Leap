@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://cmb5s6tbijsm7"]
+
+[ext_resource type="Texture2D" uid="uid://dmfvvc3lsqa1w" path="res://assets/bird/bird.png" id="1_kqhkv"]
+[ext_resource type="Texture2D" uid="uid://bggan5fnmtomv" path="res://assets/bird/bird died.png" id="2_hq4t0"]
+[ext_resource type="Script" uid="uid://dnplw1dq3tyo5" path="res://scenes/bird.gd" id="3_twsrt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3po83"]
+atlas = ExtResource("1_kqhkv")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hq4t0"]
+atlas = ExtResource("1_kqhkv")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b7mtg"]
+atlas = ExtResource("2_hq4t0")
+region = Rect2(0, 0, 152, 312)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bdh3x"]
+atlas = ExtResource("2_hq4t0")
+region = Rect2(152, 0, 152, 312)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jggmu"]
+atlas = ExtResource("2_hq4t0")
+region = Rect2(304, 0, 152, 312)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hrcfq"]
+atlas = ExtResource("2_hq4t0")
+region = Rect2(456, 0, 152, 312)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ehebh"]
+atlas = ExtResource("2_hq4t0")
+region = Rect2(608, 0, 152, 312)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qavic"]
+atlas = ExtResource("2_hq4t0")
+region = Rect2(760, 0, 152, 312)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ifiym"]
+atlas = ExtResource("2_hq4t0")
+region = Rect2(912, 0, 152, 312)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hhcb3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3po83")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hq4t0")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b7mtg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bdh3x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jggmu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hrcfq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ehebh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qavic")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ifiym")
+}],
+"loop": 0,
+"name": &"die",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=1448797346]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=92835730]
+position = Vector2(555, 285)
+sprite_frames = SubResource("SpriteFrames_hhcb3")
+animation = &"die"
+script = ExtResource("3_twsrt")
