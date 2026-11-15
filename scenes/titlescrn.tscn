@@ -1,25 +1,35 @@
 [gd_scene format=3 uid="uid://bswpwdo63nd34"]
 
-[ext_resource type="Texture2D" uid="uid://cc3nomna41l5d" path="res://stars.png" id="1_1yiqd"]
-[ext_resource type="Texture2D" uid="uid://cp18ttrryceo0" path="res://moon tileset.png" id="2_24jmf"]
-[ext_resource type="Texture2D" uid="uid://dwikq7hndcobc" path="res://Free-Summer-Pixel-Art-Backgrounds/PNG/summer 2/1.png" id="3_iwimv"]
-[ext_resource type="Texture2D" uid="uid://cytprr2dk8fi0" path="res://Free-Summer-Pixel-Art-Backgrounds/PNG/summer 2/2.png" id="4_qtde6"]
-[ext_resource type="Texture2D" uid="uid://e5s3aofvnjiu" path="res://Free-Summer-Pixel-Art-Backgrounds/PNG/summer 2/3.png" id="5_kg70m"]
-[ext_resource type="Texture2D" uid="uid://o8b163gd0kt4" path="res://3.webp" id="6_qtde6"]
-[ext_resource type="Texture2D" uid="uid://00c6ibre4q3e" path="res://ocean-and-clouds-free-pixel-art-backgrounds/Ocean_3/3.png" id="6_r30bm"]
-[ext_resource type="Texture2D" uid="uid://cnpbywns5vrcm" path="res://ocean-and-clouds-free-pixel-art-backgrounds/Ocean_3/4.png" id="8_ike8w"]
-[ext_resource type="Texture2D" uid="uid://cbn06nofc2j76" path="res://ocean-and-clouds-free-pixel-art-backgrounds/Ocean_1/2.webp" id="9_06tt2"]
-[ext_resource type="Texture2D" uid="uid://bssw17hb3gl5f" path="res://ocean-and-clouds-free-pixel-art-backgrounds/Ocean_4/3.png" id="10_5bo45"]
-[ext_resource type="Texture2D" uid="uid://cpuqqqg3r7f1t" path="res://ocean-and-clouds-free-pixel-art-backgrounds/Ocean_1/3.png" id="11_q8a5j"]
-[ext_resource type="Texture2D" uid="uid://28q4eu5b8xp4" path="res://ocean-and-clouds-free-pixel-art-backgrounds/Ocean_8/4.png" id="12_ooc7o"]
-[ext_resource type="Texture2D" uid="uid://bhduorjvsolii" path="res://New free backgrounds part3/background 1/2.png" id="14_xpe5y"]
-[ext_resource type="Texture2D" uid="uid://bq6krtss4iuwx" path="res://ocean-and-clouds-free-pixel-art-backgrounds/Ocean_4/4.png" id="15_0kctw"]
-[ext_resource type="Texture2D" uid="uid://ccep5yg42hx8t" path="res://ocean-and-clouds-free-pixel-art-backgrounds/Ocean_1/Cloud-5.webp" id="16_2mb5o"]
-[ext_resource type="Texture2D" uid="uid://cg1acuyk7uj8t" path="res://New free backgrounds part3/background 3/5.png" id="16_kg70m"]
-[ext_resource type="Texture2D" uid="uid://cp2iqu7oorr1t" path="res://New free backgrounds part5/background 3/3.png" id="17_0c73o"]
-[ext_resource type="Texture2D" uid="uid://so0slio7ir37" path="res://pixel-art-illustration-space-satellite-pixelated-satellite-space-satellite-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-vector__1_-removebg-preview.png" id="18_kg70m"]
-[ext_resource type="Texture2D" uid="uid://bu44x0wkgcbmg" path="res://New free backgrounds part5/background 3/4.png" id="18_lhde3"]
-[ext_resource type="Texture2D" uid="uid://bsu435mhg53c8" path="res://Untitled_Design-removebg-preview.png" id="19_r30bm"]
+[ext_resource type="Texture2D" uid="uid://cc3nomna41l5d" path="res://assets/stars.png" id="1_1yiqd"]
+[ext_resource type="Texture2D" uid="uid://cp18ttrryceo0" path="res://assets/moon tileset.png" id="2_24jmf"]
+[ext_resource type="Texture2D" uid="uid://dwikq7hndcobc" path="res://assets/Free-Summer-Pixel-Art-Backgrounds/PNG/summer 2/1.png" id="3_iwimv"]
+[ext_resource type="Texture2D" uid="uid://cytprr2dk8fi0" path="res://assets/Free-Summer-Pixel-Art-Backgrounds/PNG/summer 2/2.png" id="4_qtde6"]
+[ext_resource type="Texture2D" uid="uid://e5s3aofvnjiu" path="res://assets/Free-Summer-Pixel-Art-Backgrounds/PNG/summer 2/3.png" id="5_kg70m"]
+[ext_resource type="Texture2D" uid="uid://o8b163gd0kt4" path="res://assets/3.webp" id="6_qtde6"]
+[ext_resource type="Texture2D" uid="uid://00c6ibre4q3e" path="res://assets/ocean-and-clouds-free-pixel-art-backgrounds/Ocean_3/3.png" id="6_r30bm"]
+[ext_resource type="Texture2D" uid="uid://cnpbywns5vrcm" path="res://assets/ocean-and-clouds-free-pixel-art-backgrounds/Ocean_3/4.png" id="8_ike8w"]
+[ext_resource type="Texture2D" uid="uid://cbn06nofc2j76" path="res://assets/ocean-and-clouds-free-pixel-art-backgrounds/Ocean_1/2.webp" id="9_06tt2"]
+[ext_resource type="Texture2D" uid="uid://bssw17hb3gl5f" path="res://assets/ocean-and-clouds-free-pixel-art-backgrounds/Ocean_4/3.png" id="10_5bo45"]
+[ext_resource type="Texture2D" uid="uid://cpuqqqg3r7f1t" path="res://assets/ocean-and-clouds-free-pixel-art-backgrounds/Ocean_1/3.png" id="11_q8a5j"]
+[ext_resource type="Texture2D" uid="uid://28q4eu5b8xp4" path="res://assets/ocean-and-clouds-free-pixel-art-backgrounds/Ocean_8/4.png" id="12_ooc7o"]
+[ext_resource type="Texture2D" uid="uid://bhduorjvsolii" path="res://assets/New free backgrounds part3/background 1/2.png" id="14_xpe5y"]
+[ext_resource type="Texture2D" uid="uid://bq6krtss4iuwx" path="res://assets/ocean-and-clouds-free-pixel-art-backgrounds/Ocean_4/4.png" id="15_0kctw"]
+[ext_resource type="Texture2D" uid="uid://ccep5yg42hx8t" path="res://assets/ocean-and-clouds-free-pixel-art-backgrounds/Ocean_1/Cloud-5.webp" id="16_2mb5o"]
+[ext_resource type="Texture2D" uid="uid://cg1acuyk7uj8t" path="res://assets/New free backgrounds part3/background 3/5.png" id="16_kg70m"]
+[ext_resource type="Texture2D" uid="uid://cp2iqu7oorr1t" path="res://assets/New free backgrounds part5/background 3/3.png" id="17_0c73o"]
+[ext_resource type="Texture2D" uid="uid://so0slio7ir37" path="res://assets/pixel-art-illustration-space-satellite-pixelated-satellite-space-satellite-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-vector__1_-removebg-preview.png" id="18_kg70m"]
+[ext_resource type="Texture2D" uid="uid://bu44x0wkgcbmg" path="res://assets/New free backgrounds part5/background 3/4.png" id="18_lhde3"]
+[ext_resource type="Texture2D" uid="uid://bmoyacvyfcii8" path="res://assets/aseprite/Sprite-0032.png" id="20_hqf20"]
+[ext_resource type="Texture2D" uid="uid://xu03eqlbj4tj" path="res://assets/title writing asset/lunar big writing.png" id="21_ilmlr"]
+[ext_resource type="Texture2D" uid="uid://ddrdwna8rccow" path="res://assets/title writing asset/leap big writing.png" id="22_jaoos"]
+[ext_resource type="Texture2D" uid="uid://8kvnfvyte7vq" path="res://assets/buttons/buttons/start.png" id="23_y1j1i"]
+[ext_resource type="Texture2D" uid="uid://dt7o3valoti44" path="res://assets/buttons/buttons/start-pressed.png" id="24_gnq6e"]
+[ext_resource type="Texture2D" uid="uid://h242w5ovk73a" path="res://assets/buttons/buttons/credits.png" id="25_4dc8f"]
+[ext_resource type="Texture2D" uid="uid://bu6qxk5454512" path="res://assets/buttons/buttons/credits-pressed.png" id="26_fvsu7"]
+[ext_resource type="Texture2D" uid="uid://comd5pvjxwamb" path="res://assets/buttons/buttons/quit.png" id="27_lgkhu"]
+[ext_resource type="Texture2D" uid="uid://bhhpjams80h83" path="res://assets/buttons/buttons/quit-pressed.png" id="28_djij0"]
+[ext_resource type="Texture2D" uid="uid://qaaa3s5wuk1p" path="res://assets/aseprite/plane.png" id="29_hw3yu"]
+[ext_resource type="Texture2D" uid="uid://b8is5wloeeqk6" path="res://assets/aseprite/bird title.png" id="30_hfvlg"]
 
 [sub_resource type="Gradient" id="Gradient_pw15y"]
 interpolation_mode = 2
@@ -597,7 +607,7 @@ scale = Vector2(2.8125, 2.53125)
 texture = ExtResource("1_1yiqd")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1859552517]
-position = Vector2(890.00006, 408)
+position = Vector2(895.00006, 413)
 scale = Vector2(2.9949994, 2.955)
 sprite_frames = SubResource("SpriteFrames_cekx0")
 frame_progress = 0.69997436
@@ -766,12 +776,12 @@ offset_right = 1094.0
 offset_bottom = 3705.0
 texture = ExtResource("18_lhde3")
 
-[node name="TextureRect18" type="TextureRect" parent="TextureRect19" unique_id=248592236]
+[node name="TextureRect28" type="TextureRect" parent="." unique_id=248592236]
 layout_mode = 0
-offset_left = 756.0
-offset_top = 2251.0
-offset_right = 1093.0
-offset_bottom = 2438.0
+offset_left = 715.0
+offset_top = 5434.0
+offset_right = 1052.0
+offset_bottom = 5621.0
 texture = ExtResource("16_2mb5o")
 
 [node name="TextureRect22" type="TextureRect" parent="." unique_id=501454907]
@@ -783,20 +793,132 @@ offset_bottom = 40.0
 modulate = Color(0.5568628, 0.7019608, 1, 1)
 self_modulate = Color(1, 1, 1, 0.8117647)
 layout_mode = 0
-offset_left = 637.0
-offset_top = 1119.0
-offset_right = 1032.0
-offset_bottom = 1520.0
+offset_left = 702.0
+offset_top = 757.0
+offset_right = 1097.0
+offset_bottom = 1158.0
 texture = ExtResource("18_kg70m")
 expand_mode = 1
 
 [node name="TextureRect24" type="TextureRect" parent="." unique_id=1987117150]
 self_modulate = Color(0.6904162, 0.79342693, 1, 1)
 layout_mode = 0
-offset_left = -47.99997
-offset_top = 828.0
-offset_right = 345.62088
-offset_bottom = 1236.3643
+offset_left = -115.0
+offset_top = 1071.0
+offset_right = 493.5149
+offset_bottom = 1696.5531
 rotation = -0.424115
-texture = ExtResource("19_r30bm")
+texture = ExtResource("20_hqf20")
+expand_mode = 1
 flip_h = true
+
+[node name="TextureRect26" type="TextureRect" parent="." unique_id=2019800767]
+layout_mode = 0
+offset_left = -26.0
+offset_top = 211.0
+offset_right = 720.0
+offset_bottom = 427.0
+texture = ExtResource("21_ilmlr")
+expand_mode = 1
+
+[node name="TextureRect27" type="TextureRect" parent="." unique_id=1268633448]
+layout_mode = 0
+offset_left = -15.0
+offset_top = 428.0
+offset_right = 682.0
+offset_bottom = 602.0
+texture = ExtResource("22_jaoos")
+expand_mode = 1
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1198294970]
+layout_mode = 0
+offset_left = 432.0
+offset_top = 518.0
+offset_right = 736.0
+offset_bottom = 603.0
+texture_normal = ExtResource("23_y1j1i")
+texture_pressed = ExtResource("24_gnq6e")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton2" type="TextureButton" parent="." unique_id=98395616]
+layout_mode = 0
+offset_left = 435.0
+offset_top = 607.0
+offset_right = 741.0
+offset_bottom = 692.0
+texture_normal = ExtResource("25_4dc8f")
+texture_pressed = ExtResource("26_fvsu7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton3" type="TextureButton" parent="." unique_id=699165565]
+layout_mode = 0
+offset_left = 436.0
+offset_top = 697.0
+offset_right = 740.0
+offset_bottom = 779.0
+texture_normal = ExtResource("27_lgkhu")
+texture_pressed = ExtResource("28_djij0")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureRect29" type="TextureRect" parent="." unique_id=1950912788]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 2278.0
+offset_right = 276.0
+offset_bottom = 2377.0
+texture = ExtResource("29_hw3yu")
+expand_mode = 1
+
+[node name="TextureRect30" type="TextureRect" parent="." unique_id=1479254144]
+layout_mode = 0
+offset_left = 321.0
+offset_top = 2372.0
+offset_right = 522.0
+offset_bottom = 2471.0
+texture = ExtResource("29_hw3yu")
+expand_mode = 1
+
+[node name="TextureRect31" type="TextureRect" parent="." unique_id=577346931]
+layout_mode = 0
+offset_left = 66.0
+offset_top = 2408.0
+offset_right = 267.0
+offset_bottom = 2507.0
+texture = ExtResource("29_hw3yu")
+expand_mode = 1
+
+[node name="TextureRect32" type="TextureRect" parent="." unique_id=1073806362]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.034
+anchor_bottom = 0.09900001
+offset_left = 55.0
+offset_top = 2983.0
+offset_right = 134.798
+offset_bottom = 3046.848
+texture = ExtResource("30_hfvlg")
+
+[node name="TextureRect33" type="TextureRect" parent="." unique_id=22295280]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.034
+anchor_bottom = 0.09900001
+offset_left = 525.0
+offset_top = 2847.0
+offset_right = 604.798
+offset_bottom = 2910.848
+texture = ExtResource("30_hfvlg")
+
+[node name="TextureRect34" type="TextureRect" parent="." unique_id=1453774662]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.034
+anchor_bottom = 0.09900001
+offset_left = 382.0
+offset_top = 3225.0
+offset_right = 461.798
+offset_bottom = 3288.848
+texture = ExtResource("30_hfvlg")
