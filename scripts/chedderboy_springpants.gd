@@ -26,6 +26,14 @@ var jump_limit = 1
 var cs = 0.01
 var jumping = false
 var floor = false
+var jumpf1 = false
+
+var sr = RandomNumberGenerator.new()
+
+var bounce1 = preload("res://assets/bounce1.mp3")
+var bounce2 = preload("res://assets/bounce2.mp3")
+var bounce3 = preload("res://assets/bounce3.mp3")
+var bounce4 = preload("res://assets/bounce4.mp3")
 
 func _ready() -> void:
 	var scale_spring = spring.scale.y
@@ -33,7 +41,8 @@ func _ready() -> void:
 	springcol.scale = Vector2(spring.scale.x, spring.scale.y)
 	
 func _physics_process(delta: float) -> void:
-	print(floor)
+	if jumpf1:
+		jumpf1 = false
 	if can:
 		if not is_on_floor():
 			if not jumping:
@@ -55,15 +64,15 @@ func _physics_process(delta: float) -> void:
 		if Input.is_action_pressed("up"):
 			if scale_spring >= 0.1:	
 				scale_spring -= cs
-				spring.position.y =  spring.position.y - scale_spring
-				springcol.position.y = springcol.position.y  - scale_spring
-				spring_check.position.y = springcol.position.y  - scale_spring
+				spring.position.y =  spring.position.y - (og_ss + scale_spring) 
+				springcol.position.y = springcol.position.y - (og_ss +  scale_spring)
+				spring_check.position.y = springcol.position.y  - (og_ss + scale_spring)
 		else:
 			if og_ss >= scale_spring:
 				scale_spring += cs
-				spring.position.y = spring.position.y + scale_spring
-				springcol.position.y = springcol.position.y  + scale_spring
-				spring_check.position.y = springcol.position.y  + scale_spring
+				spring.position.y = spring.position.y + (og_ss + scale_spring)
+				springcol.position.y = springcol.position.y  + (og_ss +  scale_spring)
+				spring_check.position.y = springcol.position.y  + (og_ss + scale_spring)
 		var lr = roundi(Input.get_axis("left", "right"))
 		if lr > 0 or lr < 0:
 			if not (rotation_degrees > 75 or rotation_degrees < -75):
@@ -82,9 +91,13 @@ func _physics_process(delta: float) -> void:
 		move_and_slide()
 	
 func jump(s, x):
+	var sound = "bounce" + str(sr.randi_range(1, 4))
+	$AudioStreamPlayer2D.stream = get(sound)
+	$AudioStreamPlayer2D.play(0)
 	jumping = true
 	velocity = Vector2(x*(0.8-s+og_ss)*10, -100 * (10*(0.8-s+og_ss)-(abs(x)/50) + jh))
 	jumps -= 1
+	jumpf1 = true
 	print(velocity)
 
 func cant():
@@ -102,6 +115,8 @@ func spring_size_inc():
 	springcol.scale.x += 0.1
 	spring.scale.x += 0.1
 	spring_check.scale.x += 0.11
+	springcol.position.y += 0.1
+	spring.position.y += 0.1
 	print(scale.x)
 	
 func more_xp():

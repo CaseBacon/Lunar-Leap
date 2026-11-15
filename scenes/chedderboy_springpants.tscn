@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://c30840v23pwl8"]
+[gd_scene format=3 uid="uid://e0apw17w1urf"]
 
-[ext_resource type="Script" uid="uid://cf1dww16ovhd8" path="res://chedderboy_springpants.gd" id="1_esiui"]
-[ext_resource type="Texture2D" uid="uid://dsiiouchv6xwc" path="res://icon.svg" id="1_s863d"]
-[ext_resource type="Script" uid="uid://c0d0lw5xge8co" path="res://xp_bar.gd" id="3_e5d1y"]
-[ext_resource type="Script" uid="uid://ddr4kskln220c" path="res://springcheck.gd" id="3_pvip5"]
-[ext_resource type="Script" uid="uid://d16qvdy4addvp" path="res://control.gd" id="4_iamsl"]
+[ext_resource type="Script" uid="uid://cf1dww16ovhd8" path="res://scripts/chedderboy_springpants.gd" id="1_esiui"]
+[ext_resource type="Texture2D" uid="uid://cbmc83chs7qov" path="res://icon.svg" id="1_s863d"]
+[ext_resource type="Script" uid="uid://c0d0lw5xge8co" path="res://scripts/xp_bar.gd" id="3_e5d1y"]
+[ext_resource type="Script" uid="uid://ddr4kskln220c" path="res://scripts/springcheck.gd" id="3_pvip5"]
+[ext_resource type="Script" uid="uid://d16qvdy4addvp" path="res://scripts/control.gd" id="4_iamsl"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_esiui"]
 radius = 31.0
@@ -32,6 +32,7 @@ gradient = SubResource("Gradient_iamsl")
 
 [sub_resource type="SystemFont" id="SystemFont_4a4qf"]
 font_names = PackedStringArray("Tw Cen MT")
+subpixel_positioning = 0
 
 [sub_resource type="LabelSettings" id="LabelSettings_bde3n"]
 font = SubResource("SystemFont_4a4qf")
@@ -71,6 +72,7 @@ gradient = SubResource("Gradient_rlded")
 font_size = 12
 
 [node name="Chedderboy Springpants" type="CharacterBody2D" unique_id=1690689945]
+platform_on_leave = 2
 script = ExtResource("1_esiui")
 
 [node name="player" type="Sprite2D" parent="." unique_id=1232417907]
@@ -94,7 +96,7 @@ position = Vector2(0, 0.19999695)
 scale = Vector2(0.55, 0.25)
 shape = SubResource("RectangleShape2D_giyli")
 
-[node name="springcheck" type="Area2D" parent="." unique_id=129409570]
+[node name="springcheck" type="Area2D" parent="." unique_id=129409570 groups=["spring"]]
 position = Vector2(0, 0.19999695)
 scale = Vector2(0.55, 0.25)
 script = ExtResource("3_pvip5")
@@ -104,15 +106,18 @@ position = Vector2(3.4679065e-06, 1.2000122)
 shape = SubResource("RectangleShape2D_bde3n")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1501359226]
+limit_left = 0
+limit_right = 1152
+limit_bottom = 648
 position_smoothing_enabled = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Camera2D" unique_id=1392316020]
 
 [node name="Xp bar" type="TextureRect" parent="Camera2D/CanvasLayer" unique_id=1078828482]
-offset_left = -3.0
-offset_top = 611.0
-offset_right = 1151.0
-offset_bottom = 624.0
+offset_left = -2.0
+offset_top = 622.0
+offset_right = 1152.0
+offset_bottom = 635.0
 texture = SubResource("GradientTexture2D_bde3n")
 expand_mode = 1
 script = ExtResource("3_e5d1y")
@@ -129,10 +134,10 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 28.803001
 anchor_bottom = 16.211
-offset_left = 2.0
+offset_left = -1.0
 offset_top = 5.0
 offset_right = 0.8798828
-offset_bottom = -6.4400024
+offset_bottom = 4.5599976
 grow_horizontal = 2
 grow_vertical = 0
 texture = SubResource("GradientTexture2D_iamsl")
@@ -223,6 +228,8 @@ offset_bottom = 239.0
 text = "Placeholder"
 label_settings = SubResource("LabelSettings_4or36")
 autowrap_mode = 3
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1358063329]
 
 [connection signal="gui_input" from="Camera2D/CanvasLayer/Control/up1" to="Camera2D/CanvasLayer/Control" method="_on_up_1_gui_input"]
 [connection signal="gui_input" from="Camera2D/CanvasLayer/Control/up2" to="Camera2D/CanvasLayer/Control" method="_on_up_2_gui_input"]

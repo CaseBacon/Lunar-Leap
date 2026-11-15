@@ -2,7 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://dmfvvc3lsqa1w" path="res://assets/bird/bird.png" id="1_kqhkv"]
 [ext_resource type="Texture2D" uid="uid://bggan5fnmtomv" path="res://assets/bird/bird died.png" id="2_hq4t0"]
-[ext_resource type="Script" uid="uid://dnplw1dq3tyo5" path="res://scenes/bird.gd" id="3_twsrt"]
+[ext_resource type="Script" uid="uid://dnplw1dq3tyo5" path="res://scripts/bird.gd" id="3_twsrt"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_hq4t0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3po83"]
 atlas = ExtResource("1_kqhkv")
@@ -80,10 +82,106 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Node2D" type="Node2D" unique_id=1448797346]
+[sub_resource type="AtlasTexture" id="AtlasTexture_twsrt"]
+atlas = ExtResource("2_hq4t0")
+region = Rect2(0, 0, 152, 312)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_21s24"]
+atlas = ExtResource("2_hq4t0")
+region = Rect2(152, 0, 152, 312)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wujcm"]
+atlas = ExtResource("2_hq4t0")
+region = Rect2(304, 0, 152, 312)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ai2xt"]
+atlas = ExtResource("2_hq4t0")
+region = Rect2(456, 0, 152, 312)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e7a8l"]
+atlas = ExtResource("2_hq4t0")
+region = Rect2(608, 0, 152, 312)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mlfkm"]
+atlas = ExtResource("2_hq4t0")
+region = Rect2(760, 0, 152, 312)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lm7xv"]
+atlas = ExtResource("2_hq4t0")
+region = Rect2(912, 0, 152, 312)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bde3n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_twsrt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_21s24")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wujcm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ai2xt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e7a8l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mlfkm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lm7xv")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bde3n"]
+radius = 20.0
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_bde3n"]
+a = Vector2(22, 4)
+b = Vector2(115, 4)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bde3n"]
+size = Vector2(91, 12)
+
+[node name="bird" type="RigidBody2D" unique_id=1524494145]
+mass = 0.001
+physics_material_override = SubResource("PhysicsMaterial_hq4t0")
+gravity_scale = 0.0
+lock_rotation = true
+angular_damp = 1000.0
+script = ExtResource("3_twsrt")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=92835730]
-position = Vector2(555, 285)
 sprite_frames = SubResource("SpriteFrames_hhcb3")
-animation = &"die"
-script = ExtResource("3_twsrt")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=1792180549]
+visible = false
+position = Vector2(-7.0000005, 55)
+scale = Vector2(0.8388158, 0.7772435)
+sprite_frames = SubResource("SpriteFrames_bde3n")
+frame = 6
+frame_progress = 1.0
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1521452309]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1692145570]
+position = Vector2(24, -2)
+shape = SubResource("CircleShape2D_bde3n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=303839071 groups=["floor"]]
+position = Vector2(-72, -33)
+shape = SubResource("SegmentShape2D_bde3n")
+
+[node name="Area2D2" type="Area2D" parent="." unique_id=1165126367]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2" unique_id=1787449225]
+position = Vector2(-3.5, -32)
+shape = SubResource("RectangleShape2D_bde3n")
+
+[connection signal="animation_finished" from="AnimatedSprite2D2" to="." method="_on_animated_sprite_2d_2_animation_finished"]

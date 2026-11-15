@@ -64,7 +64,7 @@ func upgrade():
 				up2title.text = C_upgrades[ind]
 				up2description.text = C_upgrades_desc[ind]
 			up2ind = ind
-			up3r = rarity
+			up2r = rarity
 		if i == 2:
 			if rarity == 1:
 				ind = random.randi_range(0, len(R_upgrades)-1)
