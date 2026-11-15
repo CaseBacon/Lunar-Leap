@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://bhduorjvsolii" path="res://assets/New free backgrounds part3/background 1/2.png" id="11_0wkia"]
 [ext_resource type="Texture2D" uid="uid://cytprr2dk8fi0" path="res://assets/Free-Summer-Pixel-Art-Backgrounds/PNG/summer 2/2.png" id="12_vow11"]
 [ext_resource type="Texture2D" uid="uid://cpuqqqg3r7f1t" path="res://assets/ocean-and-clouds-free-pixel-art-backgrounds/Ocean_1/3.png" id="12_ynlga"]
-[ext_resource type="PackedScene" uid="uid://c30840v23pwl8" path="res://scenes/chedderboy_springpants.tscn" id="13_03i2h"]
+[ext_resource type="PackedScene" uid="uid://e0apw17w1urf" path="res://scenes/chedderboy_springpants.tscn" id="13_03i2h"]
 [ext_resource type="Texture2D" uid="uid://cp2iqu7oorr1t" path="res://assets/New free backgrounds part5/background 3/3.png" id="13_uagkt"]
 [ext_resource type="Texture2D" uid="uid://bu44x0wkgcbmg" path="res://assets/New free backgrounds part5/background 3/4.png" id="14_grlwe"]
 [ext_resource type="Texture2D" uid="uid://cbmc83chs7qov" path="res://icon.svg" id="14_rd5l2"]
@@ -587,6 +587,9 @@ texture = ExtResource("14_rd5l2")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_tfrf5")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bde3n"]
+size = Vector2(1184, 568)
+
 [node name="Node2D" type="Node2D" unique_id=1488432834]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2013302625]
@@ -729,3 +732,11 @@ parameters/looping = true
 
 [node name="tree" parent="." unique_id=1263069422 instance=ExtResource("17_tfrf5")]
 position = Vector2(1006, 294)
+
+[node name="endcheck" type="Area2D" parent="." unique_id=903629722]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="endcheck" unique_id=66862767]
+position = Vector2(579, -3600)
+shape = SubResource("RectangleShape2D_bde3n")
+
+[connection signal="area_entered" from="endcheck" to="Chedderboy Springpants" method="_on_endcheck_area_entered"]

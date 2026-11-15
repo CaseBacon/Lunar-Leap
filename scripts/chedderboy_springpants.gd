@@ -139,3 +139,7 @@ func coil_time_dec():
 
 func floor_check(f):
 	floor = f
+
+
+func _on_endcheck_area_entered(area: Area2D) -> void:
+	pass

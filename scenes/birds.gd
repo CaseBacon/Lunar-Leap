@@ -1,6 +1,7 @@
 extends Node2D
 
-
+var count0 = 0
+var amount0 = 3
 var count1 = 0
 var amount1 = 6
 var count2 = 0
@@ -15,6 +16,14 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if amount0 >= count0:
+		if rng.randi_range(1, 50) == 1:
+			print("added bird")
+			count0 += 1
+			var b = bird.instantiate()
+			add_child(b)
+			b.give_values(randi_range(1, 200), 200)
+			b.add_to_group("floor")
 	if amount1 >= count1:
 		if rng.randi_range(1, 100) == 1:
 			print("added bird")
