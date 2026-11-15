@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://ccep5yg42hx8t" path="res://assets/ocean-and-clouds-free-pixel-art-backgrounds/Ocean_1/Cloud-5.webp" id="16_2mb5o"]
 [ext_resource type="Texture2D" uid="uid://cg1acuyk7uj8t" path="res://assets/New free backgrounds part3/background 3/5.png" id="16_kg70m"]
 [ext_resource type="Texture2D" uid="uid://cp2iqu7oorr1t" path="res://assets/New free backgrounds part5/background 3/3.png" id="17_0c73o"]
-[ext_resource type="Texture2D" uid="uid://so0slio7ir37" path="res://assets/pixel-art-illustration-space-satellite-pixelated-satellite-space-satellite-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-vector__1_-removebg-preview.png" id="18_kg70m"]
+[ext_resource type="Texture2D" uid="uid://so0slio7ir37" path="res://assets/s2.png" id="18_kg70m"]
 [ext_resource type="Texture2D" uid="uid://bu44x0wkgcbmg" path="res://assets/New free backgrounds part5/background 3/4.png" id="18_lhde3"]
 [ext_resource type="Texture2D" uid="uid://bmoyacvyfcii8" path="res://assets/aseprite/Sprite-0032.png" id="20_hqf20"]
 [ext_resource type="Texture2D" uid="uid://xu03eqlbj4tj" path="res://assets/title writing asset/lunar big writing.png" id="21_ilmlr"]

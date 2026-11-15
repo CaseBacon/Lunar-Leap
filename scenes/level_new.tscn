@@ -16,6 +16,7 @@
 [ext_resource type="Script" uid="uid://c7j0i1ww3874n" path="res://scenes/birds.gd" id="14_tfrf5"]
 [ext_resource type="PackedScene" uid="uid://cmb5s6tbijsm7" path="res://scenes/bird.tscn" id="14_vow11"]
 [ext_resource type="AudioStream" uid="uid://e511nk0due6c" path="res://assets/LunarLeapmusic.mp3" id="15_03i2h"]
+[ext_resource type="PackedScene" uid="uid://cjxj8wd153rtm" path="res://scenes/tree.tscn" id="17_tfrf5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8cye3"]
 atlas = ExtResource("9_p6sns")
@@ -661,3 +662,6 @@ position = Vector2(212, -32)
 stream = ExtResource("15_03i2h")
 autoplay = true
 parameters/looping = true
+
+[node name="tree" parent="." unique_id=1263069422 instance=ExtResource("17_tfrf5")]
+position = Vector2(1006, 294)
