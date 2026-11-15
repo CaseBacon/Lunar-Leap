@@ -30,6 +30,7 @@
 [ext_resource type="Texture2D" uid="uid://bhhpjams80h83" path="res://assets/buttons/buttons/quit-pressed.png" id="28_djij0"]
 [ext_resource type="Texture2D" uid="uid://qaaa3s5wuk1p" path="res://assets/aseprite/plane.png" id="29_hw3yu"]
 [ext_resource type="Texture2D" uid="uid://b8is5wloeeqk6" path="res://assets/aseprite/bird title.png" id="30_hfvlg"]
+[ext_resource type="PackedScene" uid="uid://cjxj8wd153rtm" path="res://scenes/tree.tscn" id="31_y1j1i"]
 
 [sub_resource type="Gradient" id="Gradient_pw15y"]
 interpolation_mode = 2
@@ -922,3 +923,7 @@ offset_top = 3225.0
 offset_right = 461.798
 offset_bottom = 3288.848
 texture = ExtResource("30_hfvlg")
+
+[node name="RigidBody2D" parent="." unique_id=1263069422 instance=ExtResource("31_y1j1i")]
+position = Vector2(868, 3552)
+scale = Vector2(6, 6)
