@@ -8,14 +8,20 @@
 [ext_resource type="Texture2D" uid="uid://c3gjrbxu8feb0" path="res://assets/aseprite/Sprite-0010.png" id="6_7yyka"]
 [ext_resource type="Texture2D" uid="uid://c17wkokn0fibo" path="res://assets/aseprite/Sprite-0011.png" id="7_q37r2"]
 [ext_resource type="Texture2D" uid="uid://cd7kaxce1dmpw" path="res://assets/1.png" id="8_ww8fr"]
+[ext_resource type="Texture2D" uid="uid://o8b163gd0kt4" path="res://assets/3.webp" id="9_awv1e"]
 [ext_resource type="Texture2D" uid="uid://b0qafvxntaudh" path="res://assets/2663301386.png" id="9_p6sns"]
 [ext_resource type="Script" uid="uid://bsw323ipux5dr" path="res://scripts/animated_sprite_2d.gd" id="10_e7q3i"]
+[ext_resource type="Texture2D" uid="uid://cg1acuyk7uj8t" path="res://assets/New free backgrounds part3/background 3/5.png" id="10_vlpak"]
+[ext_resource type="Texture2D" uid="uid://bhduorjvsolii" path="res://assets/New free backgrounds part3/background 1/2.png" id="11_0wkia"]
 [ext_resource type="Texture2D" uid="uid://cytprr2dk8fi0" path="res://assets/Free-Summer-Pixel-Art-Backgrounds/PNG/summer 2/2.png" id="12_vow11"]
-[ext_resource type="PackedScene" uid="uid://e0apw17w1urf" path="res://scenes/chedderboy_springpants.tscn" id="13_03i2h"]
+[ext_resource type="Texture2D" uid="uid://cpuqqqg3r7f1t" path="res://assets/ocean-and-clouds-free-pixel-art-backgrounds/Ocean_1/3.png" id="12_ynlga"]
+[ext_resource type="PackedScene" uid="uid://c30840v23pwl8" path="res://scenes/chedderboy_springpants.tscn" id="13_03i2h"]
+[ext_resource type="Texture2D" uid="uid://cp2iqu7oorr1t" path="res://assets/New free backgrounds part5/background 3/3.png" id="13_uagkt"]
+[ext_resource type="Texture2D" uid="uid://bu44x0wkgcbmg" path="res://assets/New free backgrounds part5/background 3/4.png" id="14_grlwe"]
 [ext_resource type="Texture2D" uid="uid://cbmc83chs7qov" path="res://icon.svg" id="14_rd5l2"]
 [ext_resource type="Script" uid="uid://c7j0i1ww3874n" path="res://scenes/birds.gd" id="14_tfrf5"]
-[ext_resource type="PackedScene" uid="uid://cmb5s6tbijsm7" path="res://scenes/bird.tscn" id="14_vow11"]
 [ext_resource type="AudioStream" uid="uid://e511nk0due6c" path="res://assets/LunarLeapmusic.mp3" id="15_03i2h"]
+[ext_resource type="Texture2D" uid="uid://ccep5yg42hx8t" path="res://assets/ocean-and-clouds-free-pixel-art-backgrounds/Ocean_1/Cloud-5.webp" id="15_y8yyj"]
 [ext_resource type="PackedScene" uid="uid://cjxj8wd153rtm" path="res://scenes/tree.tscn" id="17_tfrf5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8cye3"]
@@ -626,6 +632,73 @@ position = Vector2(576, -2268)
 scale = Vector2(4.5, 2.53125)
 texture = ExtResource("8_ww8fr")
 
+[node name="TextureRect15" type="TextureRect" parent="." unique_id=1321404866]
+offset_left = 14.0
+offset_top = -2588.0
+offset_right = 1147.0
+offset_bottom = -1917.0
+texture = ExtResource("9_awv1e")
+
+[node name="TextureRect25" type="TextureRect" parent="." unique_id=167817108]
+offset_left = 58.0
+offset_top = -732.0
+offset_right = 634.0
+offset_bottom = -408.0
+texture = ExtResource("10_vlpak")
+flip_h = true
+
+[node name="TextureRect26" type="TextureRect" parent="." unique_id=1956129069]
+offset_left = 655.0
+offset_top = -1032.0
+offset_right = 1231.0
+offset_bottom = -708.0
+texture = ExtResource("10_vlpak")
+flip_h = true
+
+[node name="TextureRect27" type="TextureRect" parent="." unique_id=1229001977]
+offset_left = 587.0
+offset_top = -623.0
+offset_right = 1163.0
+offset_bottom = -299.0
+texture = ExtResource("10_vlpak")
+flip_h = true
+
+[node name="TextureRect21" type="TextureRect" parent="." unique_id=2025297435]
+offset_left = 8.0
+offset_top = -1742.0
+offset_right = 1143.0
+offset_bottom = -1268.0
+texture = ExtResource("11_0wkia")
+
+[node name="TextureRect10" type="TextureRect" parent="." unique_id=1757434401]
+offset_left = 11.0
+offset_top = -1510.0
+offset_right = 1149.0
+offset_bottom = -917.0
+texture = ExtResource("12_ynlga")
+flip_v = true
+
+[node name="TextureRect20" type="TextureRect" parent="." unique_id=1509577079]
+offset_left = 2.5
+offset_top = -388.8125
+offset_right = 1136.5
+offset_bottom = 237.1875
+texture = ExtResource("13_uagkt")
+
+[node name="TextureRect19" type="TextureRect" parent="." unique_id=94434760]
+offset_left = 7.0
+offset_top = -112.90625
+offset_right = 1142.0
+offset_bottom = 409.09375
+texture = ExtResource("14_grlwe")
+
+[node name="TextureRect28" type="TextureRect" parent="." unique_id=727037203]
+offset_left = 3409.0
+offset_top = 5584.9375
+offset_right = 3746.0
+offset_bottom = 5771.9375
+texture = ExtResource("15_y8yyj")
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=957849029]
 position = Vector2(865, -3522)
 scale = Vector2(4, 4)
@@ -648,15 +721,6 @@ tile_set = SubResource("TileSet_bde3n")
 
 [node name="birds" type="Node2D" parent="." unique_id=1100454946]
 script = ExtResource("14_tfrf5")
-
-[node name="bird" parent="birds" unique_id=1524494145 groups=["floor"] instance=ExtResource("14_vow11")]
-position = Vector2(93, 198)
-
-[node name="bird2" parent="birds" unique_id=1221970428 groups=["floor"] instance=ExtResource("14_vow11")]
-position = Vector2(502, 120)
-
-[node name="bird3" parent="birds" unique_id=1515378835 groups=["floor"] instance=ExtResource("14_vow11")]
-position = Vector2(212, -32)
 
 [node name="AudioListener2D" type="AudioStreamPlayer2D" parent="." unique_id=1384002016]
 stream = ExtResource("15_03i2h")

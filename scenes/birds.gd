@@ -1,7 +1,7 @@
 extends Node2D
 
 
-var count1 = 3
+var count1 = 0
 var amount1 = 6
 var count2 = 0
 var amount2 = 3
