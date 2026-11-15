@@ -27,6 +27,7 @@ floor=""
 limits=""
 spring=""
 player=""
+movingcam=""
 
 [input]
 
