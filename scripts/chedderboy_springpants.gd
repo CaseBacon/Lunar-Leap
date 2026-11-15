@@ -12,7 +12,7 @@ const JUMP_VELOCITY = -400.0
 @onready var spring_check = $springcheck
 
 var scale_spring = 0.25
-var og_ss = 0.25
+var og_ss = 0.35
 var adjust = 0
 var rotting = false
 var lr = 1
@@ -27,7 +27,7 @@ var cs = 0.01
 var jumping = false
 var floor = false
 var jumpf1 = false
-
+var up = false
 var sr = RandomNumberGenerator.new()
 
 var bounce1 = preload("res://assets/bounce1.mp3")
@@ -64,15 +64,19 @@ func _physics_process(delta: float) -> void:
 		if Input.is_action_pressed("up"):
 			if scale_spring >= 0.1:	
 				scale_spring -= cs
-				spring.position.y =  spring.position.y - (og_ss + scale_spring) 
-				springcol.position.y = springcol.position.y - (og_ss +  scale_spring)
-				spring_check.position.y = springcol.position.y  - (og_ss + scale_spring)
+				playersprite.position.y =  playersprite.position.y - (og_ss - scale_spring) 
+				Playercol.position.y = Playercol.position.y -(og_ss -  scale_spring)
+				spring.position.y = spring.position.y - (og_ss - scale_spring)
+				springcol.position.y = springcol.position.y  - (og_ss -  scale_spring)
+				spring_check.position.y = springcol.position.y  - (og_ss - scale_spring)
 		else:
 			if og_ss >= scale_spring:
 				scale_spring += cs
-				spring.position.y = spring.position.y + (og_ss + scale_spring)
-				springcol.position.y = springcol.position.y  + (og_ss +  scale_spring)
-				spring_check.position.y = springcol.position.y  + (og_ss + scale_spring)
+				spring.position.y = spring.position.y + (og_ss - scale_spring)
+				springcol.position.y = springcol.position.y  + (og_ss -  scale_spring)
+				spring_check.position.y = springcol.position.y  + (og_ss - scale_spring)
+				playersprite.position.y =  playersprite.position.y + (og_ss - scale_spring) 
+				Playercol.position.y = Playercol.position.y + (og_ss - scale_spring)
 		var lr = roundi(Input.get_axis("left", "right"))
 		if lr > 0 or lr < 0:
 			if not (rotation_degrees > 75 or rotation_degrees < -75):
