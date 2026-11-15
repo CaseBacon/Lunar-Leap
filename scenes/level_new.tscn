@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://cytprr2dk8fi0" path="res://assets/Free-Summer-Pixel-Art-Backgrounds/PNG/summer 2/2.png" id="12_vow11"]
 [ext_resource type="PackedScene" uid="uid://e0apw17w1urf" path="res://scenes/chedderboy_springpants.tscn" id="13_03i2h"]
 [ext_resource type="Texture2D" uid="uid://cbmc83chs7qov" path="res://icon.svg" id="14_rd5l2"]
+[ext_resource type="Script" uid="uid://c7j0i1ww3874n" path="res://scenes/birds.gd" id="14_tfrf5"]
 [ext_resource type="PackedScene" uid="uid://cmb5s6tbijsm7" path="res://scenes/bird.tscn" id="14_vow11"]
 [ext_resource type="AudioStream" uid="uid://e511nk0due6c" path="res://assets/LunarLeapmusic.mp3" id="15_03i2h"]
 
@@ -645,6 +646,7 @@ tile_map_data = PackedByteArray("AAD//yIAAAADAAcAAAD//yMAAAADAAAAAAD//yQAAAADAAE
 tile_set = SubResource("TileSet_bde3n")
 
 [node name="birds" type="Node2D" parent="." unique_id=1100454946]
+script = ExtResource("14_tfrf5")
 
 [node name="bird" parent="birds" unique_id=1524494145 groups=["floor"] instance=ExtResource("14_vow11")]
 position = Vector2(93, 198)
