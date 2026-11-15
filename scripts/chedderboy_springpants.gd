@@ -102,13 +102,15 @@ func jump(s, x):
 	velocity = Vector2(x*(0.8-s+og_ss)*10, -100 * (10*(0.8-s+og_ss)-(abs(x)/50) + jh))
 	jumps -= 1
 	jumpf1 = true
-	print(velocity)
 
 func cant():
 	can = false
 
 func cancan():
 	can = true
+
+func checkcan():
+	return can
 
 func add_height():
 	jh += 2
