@@ -3,5 +3,5 @@ extends AnimatedSprite2D
 func _ready() -> void:
 	pass
 
-func _physics_process(_delta: float) -> void:
-	play("default")
+#func _physics_process(_delta: float) -> void:
+	#play("default")

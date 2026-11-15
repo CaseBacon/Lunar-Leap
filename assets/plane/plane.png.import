@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bsu435mhg53c8"
-path="res://.godot/imported/Untitled_Design-removebg-preview.png-1d8d58ee3a555cbc11ff1e3533164089.ctex"
+uid="uid://3x2s4y4r1j63"
+path="res://.godot/imported/plane.png-c9642b1ff42d3545fbb34bc430f8b479.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Untitled_Design-removebg-preview.png"
-dest_files=["res://.godot/imported/Untitled_Design-removebg-preview.png-1d8d58ee3a555cbc11ff1e3533164089.ctex"]
+source_file="res://assets/plane/plane.png"
+dest_files=["res://.godot/imported/plane.png-c9642b1ff42d3545fbb34bc430f8b479.ctex"]
 
 [params]
 

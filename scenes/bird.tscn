@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cmb5s6tbijsm7"]
+[gd_scene format=3 uid="uid://bxkn8fsunpylq"]
 
 [ext_resource type="Texture2D" uid="uid://dmfvvc3lsqa1w" path="res://assets/bird/bird.png" id="1_kqhkv"]
 [ext_resource type="Texture2D" uid="uid://bggan5fnmtomv" path="res://assets/bird/bird died.png" id="2_hq4t0"]
