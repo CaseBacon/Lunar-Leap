@@ -1,7 +1,7 @@
-[gd_scene format=4 uid="uid://dtrltdvlv50x1"]
+[gd_scene format=4 uid="uid://b21bu1eirhll1"]
 
-[ext_resource type="Texture2D" uid="uid://dsiiouchv6xwc" path="res://icon.svg" id="1_64fjj"]
-[ext_resource type="PackedScene" uid="uid://c30840v23pwl8" path="res://chedderboy_springpants.tscn" id="2_rfpkf"]
+[ext_resource type="Texture2D" uid="uid://cbmc83chs7qov" path="res://icon.svg" id="1_64fjj"]
+[ext_resource type="PackedScene" uid="uid://e0apw17w1urf" path="res://scenes/chedderboy_springpants.tscn" id="2_rfpkf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rfpkf"]
 texture = ExtResource("1_64fjj")
