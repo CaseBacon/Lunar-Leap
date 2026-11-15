@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://e0apw17w1urf"]
 
 [ext_resource type="Script" uid="uid://cf1dww16ovhd8" path="res://scripts/chedderboy_springpants.gd" id="1_esiui"]
-[ext_resource type="Texture2D" uid="uid://cbmc83chs7qov" path="res://icon.svg" id="1_s863d"]
+[ext_resource type="Texture2D" uid="uid://q56qxc5nql2g" path="res://assets/CheddarBoy_SpringPants_body_and_head.png" id="2_07fie"]
+[ext_resource type="Texture2D" uid="uid://ddnvl0svasiha" path="res://assets/springupscale.webp" id="3_07fie"]
 [ext_resource type="Script" uid="uid://c0d0lw5xge8co" path="res://scripts/xp_bar.gd" id="3_e5d1y"]
 [ext_resource type="Script" uid="uid://ddr4kskln220c" path="res://scripts/springcheck.gd" id="3_pvip5"]
 [ext_resource type="Script" uid="uid://d16qvdy4addvp" path="res://scripts/control.gd" id="4_iamsl"]
@@ -11,17 +12,24 @@ radius = 31.0
 height = 99.600006
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_giyli"]
-size = Vector2(130, 120)
+size = Vector2(38.181816, 131.20001)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bde3n"]
-size = Vector2(134.54546, 132)
+size = Vector2(34.545464, 128)
 
 [sub_resource type="Gradient" id="Gradient_esiui"]
-offsets = PackedFloat32Array(0)
-colors = PackedColorArray(0, 1, 0, 1)
+offsets = PackedFloat32Array(0, 0.9939759)
+colors = PackedColorArray(0, 0.58431375, 1, 1, 0, 0.44705883, 1, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_bde3n"]
 gradient = SubResource("Gradient_esiui")
+
+[sub_resource type="Gradient" id="Gradient_07fie"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ftvem"]
+gradient = SubResource("Gradient_07fie")
 
 [sub_resource type="Gradient" id="Gradient_iamsl"]
 offsets = PackedFloat32Array(1)
@@ -76,14 +84,14 @@ platform_on_leave = 2
 script = ExtResource("1_esiui")
 
 [node name="player" type="Sprite2D" parent="." unique_id=1232417907]
-position = Vector2(0, -65.8)
-scale = Vector2(0.5, 0.8)
-texture = ExtResource("1_s863d")
+position = Vector2(4, -44)
+scale = Vector2(0.6230769, 0.61)
+texture = ExtResource("2_07fie")
 
 [node name="spring" type="Sprite2D" parent="." unique_id=186469690]
-position = Vector2(0, -0.80000305)
-scale = Vector2(0.55, 0.25)
-texture = ExtResource("1_s863d")
+position = Vector2(0.5039997, -5.9499993)
+scale = Vector2(0.422, 0.35)
+texture = ExtResource("3_07fie")
 
 [node name="Playercol" type="CollisionShape2D" parent="." unique_id=1378865547]
 process_priority = 1
@@ -92,17 +100,17 @@ position = Vector2(0, -65.8)
 shape = SubResource("CapsuleShape2D_esiui")
 
 [node name="Springcol" type="CollisionShape2D" parent="." unique_id=1976129197]
-position = Vector2(0, 0.19999695)
+position = Vector2(-0.9959998, -4.3500032)
 scale = Vector2(0.55, 0.25)
 shape = SubResource("RectangleShape2D_giyli")
 
 [node name="springcheck" type="Area2D" parent="." unique_id=129409570 groups=["spring"]]
-position = Vector2(0, 0.19999695)
+position = Vector2(0.5039997, -5.750005)
 scale = Vector2(0.55, 0.25)
 script = ExtResource("3_pvip5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="springcheck" unique_id=906924126]
-position = Vector2(3.4679065e-06, 1.2000122)
+position = Vector2(-2.7272744, -0.7999878)
 shape = SubResource("RectangleShape2D_bde3n")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1501359226]
@@ -121,6 +129,15 @@ offset_bottom = 635.0
 texture = SubResource("GradientTexture2D_bde3n")
 expand_mode = 1
 script = ExtResource("3_e5d1y")
+
+[node name="TextureRect" type="TextureRect" parent="Camera2D/CanvasLayer/Xp bar" unique_id=893526200]
+show_behind_parent = true
+layout_mode = 0
+offset_top = -2.0
+offset_right = 1154.0
+offset_bottom = 15.0
+texture = SubResource("GradientTexture2D_ftvem")
+expand_mode = 1
 
 [node name="Control" type="Control" parent="Camera2D/CanvasLayer" unique_id=237379290]
 layout_mode = 3

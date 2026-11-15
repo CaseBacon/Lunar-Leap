@@ -19,8 +19,8 @@ func _physics_process(_delta: float) -> void:
 				$AnimatedSprite2D.visible = false
 				$AnimatedSprite2D2.visible = true
 				$AnimatedSprite2D2.play("default")
+				get_tree().get_first_node_in_group("player").get_child(5).get_child(0).get_child(0).add()
 
 
 func _on_animated_sprite_2d_2_animation_finished() -> void:
-	get_tree().get_first_node_in_group("player").get_child(5).get_child(0).get_child(0).add()
 	queue_free()
